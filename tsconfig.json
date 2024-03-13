@@ -16,6 +16,26 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/mmmhelpers": [
+        "libs/mmmhelpers/src"
+      ],
+      "@app/mmmhelpers/*": [
+        "libs/mmmhelpers/src/*"
+      ],
+      "@app/helpers": [
+        "libs/helpers/src"
+      ],
+      "@app/helpers/*": [
+        "libs/helpers/src/*"
+      ],
+      "@mmm/authelpers": [
+        "libs/authelpers/src"
+      ],
+      "@mmm/authelpers/*": [
+        "libs/authelpers/src/*"
+      ]
+    }
   }
 }
