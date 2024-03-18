@@ -63,8 +63,8 @@ export class UsersService {
         $or: [
           { username: { $regex: query, $options: 'i' } },
           { email: { $regex: query, $options: 'i' } },
-        ],
-      });
+        ]
+      }).select('password');
       return user;
     } catch (error) {
       throw new BadRequestException(error.message);
